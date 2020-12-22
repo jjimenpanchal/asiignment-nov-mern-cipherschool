@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+section{
+    width:100%;
+    background-color: bisque;
+    flex-wrap: wrap;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* justify-content:space-between; */
+    align-items: center;
+    /* flex-direction: row-reverse; */
+    /* flex: 2; */
+
+}
+
+section div{
+    border: 1px red solid;
+    padding: 20px;
+    /* width: 30%; */
+    flex-basis: 30%;
+}
+.flex1{
+    /* flex: 1.5; */
+    /* width: 30%; */
+    background-color: red;
+}
+.flex2{
+    /* flex: 1; */
+    /* width: 30%; */
+    background-color: yellow;
+}
+.flex3{
+    /* flex: 1; */
+    /* width: 30%; */
+    background-color: green;
+}
+@media(min-width:768px)
+{
+    section{
+        display: flex;
+        justify-content: space-between;
+    }
+}
